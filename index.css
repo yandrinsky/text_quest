@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding-top: calc((100vh - 700px) / 2);
+    font-size: 12px;
+    font-family: "sans-serif";
+}
+.game{
+    margin: 10px auto;
+    width: 100%;
+    height: 700px;
+    max-width: 700px;
+    border: 1px solid black;
+
+}
+.game_window{
+    width: 100%;
+    height: 500px;
+    border-bottom: 1px solid black;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.game_button{
+    width: 150px;
+    padding: 1.2rem 2rem;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.05s ease;
+}
+.buttons_wrapper{
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    width: 100%;
+}
+
+.game_button:active{
+    background-color: #777777;
+    transform: scale(0.95);
+    color: #fff;
+}
+
+.game_message{
+    font-size: 20px;
+    font-family: "Consolas";
+    transition: all 0.2s ease;
+}
+
+.hide{
+    display: none !important;
+}
+.show{
+    display: initial !important;
+}
+.game_end{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Consolas";
+}
